@@ -1,0 +1,210 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.dashboard-header {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-email {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  background: #f0f2f5;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.btn-logout {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-logout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.dashboard-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.welcome-card,
+.info-card,
+.api-card,
+.tech-stack {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-card h2 {
+  margin: 0 0 16px 0;
+  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.success-message {
+  color: #059669;
+  font-size: 16px;
+  margin: 0;
+  padding: 16px;
+  background: #d1fae5;
+  border-radius: 8px;
+  border-left: 4px solid #059669;
+}
+
+.info-card h3,
+.api-card h3,
+.tech-stack h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.info-card p,
+.api-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.info-card li {
+  color: #555;
+  padding: 10px 0;
+  font-size: 15px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.info-card li:last-child {
+  border-bottom: none;
+}
+
+.date-display {
+  margin-top: 24px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #d1d9e0;
+}
+
+.date-display h4 {
+  margin: 0 0 12px 0;
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.date-text {
+  font-size: 20px;
+  color: #667eea;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+}
+
+.loading-text {
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
+.error-text {
+  color: #c33;
+  margin: 0;
+}
+
+.tech-stack {
+  text-align: center;
+}
+
+.tech-badges {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.api-card a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.api-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 16px 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 22px;
+  }
+
+  .welcome-card,
+  .info-card,
+  .api-card,
+  .tech-stack {
+    padding: 24px;
+  }
+
+  .welcome-card h2 {
+    font-size: 24px;
+  }
+}
