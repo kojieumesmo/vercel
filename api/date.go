@@ -7,6 +7,9 @@ import (
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	currentTime := time.Now().Format(time.RFC850)
-	fmt.Fprintf(w, currentTime)
+	// Apply authentication middleware
+	WithAuth(func(w http.ResponseWriter, r *http.Request) {
+		currentTime := time.Now().Format(time.RFC850)
+		fmt.Fprintf(w, currentTime)
+	})(w, r)
 }
